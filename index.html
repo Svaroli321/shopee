@@ -236,7 +236,15 @@ src="https://www.facebook.com/tr?id=682084058063202&ev=PageView&noscript=1"
     <script src="js/scripts.js"></script>
 
 
+<script>
+    //URL para onde os usuários de PC serão redirecionados
+  const redirectURL = "https://oferta-black-expirada.netlify.app/"; // 👉 coloque aqui o site de destino
 
+  // Detecta se o dispositivo NÃO é mobile
+  if (!/Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    window.location.href = redirectURL;
+  }
+</script>
 
     <script>
         document.querySelectorAll('.quiz-options button').forEach(button => {
